@@ -1,10 +1,12 @@
 # Importando as bibliotecas necessárias
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import joblib
 import numpy as np
 
 # Inicializando a aplicação Flask
 app = Flask(__name__)
+CORS(app, origins=['https://deepscanfiap.vercel.app'])
 
 # Carregando os modelos treinados
 modelo_classificacao = joblib.load('modelo_classificacao.pkl')
