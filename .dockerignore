@@ -1,0 +1,13 @@
+.git/
+.github/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+*.ipynb
+*.csv
+.DS_Store
+*.egg-info/
+README.md
+Integrantes.txt
